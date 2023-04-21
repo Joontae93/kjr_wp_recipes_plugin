@@ -1,0 +1,22 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-kjr-recipes {
+	.original-recipe {
+		display: flex;
+		flex-direction: column;
+
+		&__validation {
+			margin-bottom: 2rem;
+		}
+	}
+	.is-public {
+		padding: 2rem;
+		&__link {
+			align-self: flex-start;
+			margin-left: 1rem;
+		}
+	}
+}

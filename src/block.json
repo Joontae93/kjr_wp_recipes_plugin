@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "kjr/recipes",
+	"version": "0.1.0",
+	"title": "Recipe",
+	"category": "widgets",
+	"icon": "food",
+	"selectors": {
+		"root": "kjr-recipe"
+	},
+	"description": "A recipe block",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"ingredients": {
+			"type": "object"
+		},
+		"instructions": {
+			"type": "object"
+		},
+		"is_publicly_available": {
+			"type": "boolean",
+			"default": true
+		},
+		"source_url": {
+			"type": "string"
+		}
+	},
+	"textdomain": "kjr",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}
